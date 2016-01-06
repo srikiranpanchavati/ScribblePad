@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" >
+
+<TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:gravity="center_horizontal" >
+        
+	    <com.first.exp.scribblepad.DrawView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"      
+	        android:layout_span="6"
+	        />
+
+</TableRow>
+
+ <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" 
+        android:background="#e6e6fa"
+        >
+
+        <ImageButton
+            android:id="@+id/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+             android:src="@drawable/blue" 
+             android:contentDescription="@string/blue"          
+            />
+
+        <ImageButton
+            android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"  
+             android:src="@drawable/red" 
+             android:contentDescription="@string/red"       
+             />
+        
+        <ImageButton
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"   
+             android:src="@drawable/black" 
+             android:contentDescription="@string/black"      
+            />
+        
+        <ImageButton
+            android:id="@+id/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" 
+             android:src="@drawable/yellow" 
+             android:contentDescription="@string/yellow"      
+            
+            />
+
+        <ImageButton
+            android:id="@+id/green"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"  
+             android:src="@drawable/green" 
+             android:contentDescription="@string/green"        
+            />
+        
+        <ImageButton
+            android:id="@+id/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"         
+            android:src="@drawable/gray"
+            android:contentDescription="@string/gray"
+            />
+             
+
+        </TableRow>
+        
+        
+ <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#e6e6fa"
+         >
+        
+     <TextView
+         android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thick"
+        android:gravity="center_horizontal"
+        android:layout_span="1"/>
+     
+     <TextView
+         android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/size"
+        android:gravity="center_horizontal"
+        android:layout_span="1"/>
+
+     <SeekBar
+         android:id="@+id/seekBar1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" 
+         android:layout_span="3"
+         android:progress="25"
+         />
+     
+      
+     <ImageButton
+    android:id="@+id/eraser"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/capture"
+    android:contentDescription="@string/eraser"/>
+   
+   </TableRow>
+
+</TableLayout>
+
+
+        	
+        	
+        	
